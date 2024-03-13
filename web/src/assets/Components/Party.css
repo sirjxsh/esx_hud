@@ -1,0 +1,103 @@
+/* Partysystem */
+
+/* Auto layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    position: absolute;
+    width: 248px;
+    height: 200.1px;
+    left: 1637px;
+    top: 825px;
+
+    font-size: 12px;
+}
+
+.player {
+    width: 100%;
+    height: 35px;
+    flex: none;
+    background: rgba(65, 65, 65, 0.43);
+}
+
+.playeroffline {
+    width: 100%;
+    height: 35px;
+    background: rgba(65, 65, 65, 0.43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playeroffline svg {
+    height: 20px;
+    left: 5%;
+    position: absolute;
+    fill: orangered;
+}
+
+.bar {
+    left: 0%;
+    right: 0%;
+    top: 12.49%;
+    bottom: 82.49%;
+    flex-direction: row;
+    font-size: 12px;
+    transition: width 0.5s ease-in-out;
+}
+
+.health {
+    left: 0%;
+    right: 0%;
+    top: 17.51%;
+    bottom: 82.49%;
+    border: 4px solid #00d0c4;
+    transition: width 0.5s ease-in-out;
+}
+
+.bighealth {
+    left: 0%;
+    right: 0%;
+    top: 17.51%;
+    bottom: 82.49%;
+    border: 8px solid #00d0c4;
+}
+
+.armor {
+    left: 0%;
+    right: 0%;
+    top: 12.51%;
+    bottom: 87.49%;
+    border: 4px dashed #ffffff;
+    transition: width 0.5s ease-in-out;
+}
+
+.krone {
+    background: url(krone.png);
+    position: absolute;
+    left: 0.81%;
+    right: 94.35%;
+    top: 1%;
+    bottom: 93%;
+}
+
+.hpdeath {
+    position: absolute;
+    left: 0%;
+    right: 19.35%;
+    top: 72.51%;
+    bottom: 27.49%;
+
+    border: 8px solid #dc0000;
+    transform: rotate(-0.01deg);
+}
+
+.disconnect {
+    width: 19px;
+    height: 17px;
+    background: #00d0c4;
+}
