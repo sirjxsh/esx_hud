@@ -35,13 +35,15 @@ export const Party = (props) => {
         <div className='container'>
             <For each={hudStorageState.party}>
                 {(player, i) => (
-                    <User
-                        key={i}
-                        name={player.name}
-                        armor={player.armor}
-                        health={player.health}
-                        online={player.online}
-                    />
+                    <Show when={!player.name.includes('Player')}>
+                        <User
+                            key={i}
+                            name={player.name}
+                            armor={player.armor}
+                            health={player.health}
+                            online={player.online}
+                        />
+                    </Show>
                 )}
             </For>
         </div>

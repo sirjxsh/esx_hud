@@ -1,11 +1,8 @@
 group = nil
 
-
 RegisterNetEvent("esx:updateParty")
 AddEventHandler("esx:updateParty", function(party)
     group = party
-    print(party)
-    --SendNUIMessage({ type = "PARTY_HUD", value = party })
 end)
 
 Citizen.CreateThread(function()

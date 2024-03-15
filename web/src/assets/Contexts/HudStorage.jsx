@@ -130,6 +130,7 @@ export default function HudStorageProvider(props) {
     function updateParty(newValues) {
         store.party.forEach((currentPlayer, index) => {
             const newValue = newValues[index]
+            if (!newValue) return
             setStore(
                 'party',
                 index,
